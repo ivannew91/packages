@@ -63,6 +63,7 @@ jobs:
         arch_packages: [
           x86_64,
           aarch64_cortex-a53,
+          aarch64_cortex-a72,
           aarch64_generic,
           arm_cortex-a15_neon-vfpv4,
           mips_24kc,
@@ -79,6 +80,8 @@ jobs:
             no_img: false
           - arch_packages: aarch64_cortex-a53
             target: ['mvebu', 'cortexa53']
+          - arch_packages: aarch64_cortex-a72
+            target: ['bcm27xx', 'cortexa72']
           - arch_packages: aarch64_generic
             target: ['armsr', 'armv8']
           - arch_packages: arm_cortex-a15_neon-vfpv4
